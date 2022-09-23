@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <!-- Mi CSS -->
+        <link rel="stylesheet" href="assets/css/style_parte2.css" />
+        <title>Desafío Condicionales - Parte 2</title>
+    </head>
+    <body>
+        <main>
+            <h1>Puedes llevar hasta 10 productos en total</h1>
+
+            <!-- Stickers -->
+            <div class="stickers-container">
+                <!-- Item 1 -->
+                <div class="sticker">
+                    <img src="assets/img/mario-bros.jpg" alt="Mario Bross" />
+                    <input
+                        type="number"
+                        name="sticker"
+                        id="sticker-1"
+                        placeholder="0"
+                        min="0"
+                        max="10"
+                    />
+                </div>
+
+                <!-- Item 2 -->
+                <div class="sticker">
+                    <img src="assets/img/mario-kart.jpg" alt="Mario Kart" />
+                    <input
+                        type="number"
+                        name="sticker"
+                        id="sticker-2"
+                        placeholder="0"
+                        min="0"
+                        max="10"
+                    />
+                </div>
+
+                <!-- Item 3 -->
+                <div class="sticker">
+                    <img
+                        src="assets/img/mario-odyssey.jpg"
+                        alt="Mario Odyssey"
+                    />
+                    <input
+                        type="number"
+                        name="sticker"
+                        id="sticker-3"
+                        placeholder="0"
+                        min="0"
+                        max="10"
+                    />
+                </div>
+            </div>
+            <!--Fin 'stickers-container'-->
+
+            <!-- Mensaje de Alerta si lleva >10 stickers -->
+            <p id="mensaje-alerta"></p>
+
+            <button id="boton">Verificar</button>
+        </main>
+
+        <script src="assets/js/script_parte2.js"></script>
+    </body>
+</html>
